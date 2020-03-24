@@ -1,6 +1,6 @@
 const { get, set, unset } = require("./lib/commands");
 const { askForPassword } = require("./lib/questions");
-const [command, key, value] = process.argv.slice(2);
+const [command, key] = process.argv.slice(2);
 
 async function run() {
   if (command === "get") {
